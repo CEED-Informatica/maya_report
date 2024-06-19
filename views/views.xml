@@ -1,6 +1,20 @@
 <odoo>
   <data>
-  
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="maya_report.report_tree">
+      <field name="name">Lista de informes</field>
+      <field name="model">maya_report.report</field>
+      <field name="arch" type="xml">
+        <tree create="false">
+          <field name="code"/>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="version"/>
+          <button string="Generar" name="run_report" 
+            icon="fa-play" class="oe_highlight" type="object"/>
+        </tree>
+      </field>
+    </record>
 
     <!-- actions opening views on models -->
 <!--
