@@ -1,0 +1,47 @@
+<odoo>
+  <data>
+  
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="maya_report.action_window">
+      <field name="name">maya_report window</field>
+      <field name="res_model">maya_report.maya_report</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="maya_report.action_server">
+      <field name="name">maya_report server</field>
+      <field name="model_id" ref="model_maya_report_maya_report"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="Maya | Report" id="maya_report.menu_root" sequence="3"/>
+
+    <menuitem name="Informes" id="maya_report.menu_reports" parent="maya_report.menu_root"/>
+
+<!--
+    <menuitem name="Menu 1" id="maya_report.menu_1" parent="maya_report.menu_root"/>
+    <menuitem name="Menu 2" id="maya_report.menu_2" parent="maya_report.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="maya_report.menu_1_list" parent="maya_report.menu_1"
+              action="maya_report.action_window"/>
+    <menuitem name="Server to list" id="maya_report" parent="maya_report.menu_2"
+              action="maya_report.action_server"/>
+-->
+  </data>
+</odoo>
