@@ -42,7 +42,7 @@
 -->
 
     <!-- Top menu item -->
-    <menuitem name="Maya | Report" id="maya_report.menu_root" sequence="3"/>
+    <menuitem name="Maya | Report" id="maya_report.menu_root" sequence="4"/>
 
     <menuitem name="Informes" id="maya_report.menu_reports" parent="maya_report.menu_root"/>
 
